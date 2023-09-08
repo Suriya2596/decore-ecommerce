@@ -1,7 +1,7 @@
 ## Setup the project
 ### Step 1: Install Node.js on Your PC and Clone the Repository
 1. Download and install the appropriate version of Node.js for your PC from https://nodejs.org/en/download.
-2. Run the command in Command Prompt: git clone https://github.com/Suriya2596/user-authentication
+2. Run the command in Command Prompt: git clone https://github.com/Suriya2596/decore-ecommerce
 ### Step 2: Setting Up the Backend
 1. Open the project in Visual Studio.
 2. Open the new terminal.
