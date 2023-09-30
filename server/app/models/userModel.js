@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 const validator = require("validator")
-const { isEmail, isNumeric } = require("validator/lib")
+const isNumeric = require("validator/lib/isNumeric")
+const isEmail = require("validator/lib/isEmail")
 const { Schema } = mongoose
 
 const userModel = new Schema({
@@ -21,7 +22,7 @@ const userModel = new Schema({
         }
     },
     mobile: {
-        type: Number,
+        type: String,
         required: true,
         validate: {
             validator: function (value) {
