@@ -1,7 +1,8 @@
-const User = require("../models/userModel");
+
 const userController = {}
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
+const User = require("../models/userModel")
 
 userController.register = (req, res) => {
     const body = req.body
@@ -79,4 +80,27 @@ userController.login  = (req,res)=>{
         res.json(err)
     })
 }
+
+userController.account = (req,res)=>{
+    User.findOne({email:req.user.email})
+    .then((user)=>{
+        if(user){
+            const data = {
+                _id:user._id,
+                email:user.email,
+                mobile:user.mobile
+            }
+            res.json(data)
+        }else{
+            res.status(400).json({
+                message: "Invalidate Token"
+            })
+        }
+    })
+    .catch((err)=>{
+        res.json(err)
+    })
+}
+
+
 module.exports = userController
