@@ -1,0 +1,208 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Expenses-App
+    Template URI: 
+    Description: This is Next js template
+    Author: Suriya
+    Author URI: http://expensesApp.com
+    Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------
+
+     CSS INDEX
+    ===================
+    1.Global CSS
+    2.Common CSS
+    3.Header CSS
+    4.Home Pgae CSS
+
+-----------------------------------------------------------------------------------*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --font-Playfair: "Playfair Display", serif;
+  --font-Poppins: "Poppins", sans-serif;
+  --primay: #6c3a13;
+  --secondary: #f9bf29;
+  --black: #100E0E;
+  --drak-gray: #2e2d2a;
+  --gray: #ebebeb;
+  --white: #fdfcfa;
+  --para-color: #3e3d3d;
+}
+
+* {
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  box-sizing: border-box !important;
+  font-family: var(--font-Poppins);
+  background-color: var(--gray);
+  padding: 0;
+  margin: 0;
+  color: var(--white);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Removeing input number arrow Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Removeing input number arrow : Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*----------------------------------------------------*/
+/* 1.Global CSS */
+/*----------------------------------------------------*/
+.bg-cl{
+  background-color: var(--black);
+}
+.pry-cl {
+  color: var(--primay);
+}
+.sry-cl {
+    color: var(--secondary);
+}
+.white-cl{
+  color: var(--white);
+}
+.black-cl {
+  color: var(--black);
+}
+.gray-cl {
+  color: var(--gray);
+}
+.dr-gray-cl {
+  color: var(--drak-gray);
+}
+/* fonts size */
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--para-color);
+}
+h1 {
+  font-size: 46px;
+  font-weight: 800;
+  color: var(--black);
+}
+h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: var(--black);
+}
+h3 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--black);
+}
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--black);
+}
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--black);
+}
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+/*----------------------------------------*/
+/* 2.Common CSS */
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* 3.Header CSS */
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* 4.Home Page CSS */
+/*----------------------------------------*/
+
+
+/*----------------------------------------*/
+/* 5.Resume Page CSS */
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* 6.Portfolio Page CSS */
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* 7.Services Page CSS */
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* 8.Contact Page CSS */
+/*----------------------------------------*/
+
+
+/*----------------------------------------*/
+/*Responsive CSS */
+/*----------------------------------------*/
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 20px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+}
+
+@media (max-width: 425px) {
+}
+
+@media (max-width: 375px) {
+}
+
+@media (max-width: 320px) {
+}
+
+/*--------------------------------*/
+/* .End CSS
+/*--------------------------------*/
