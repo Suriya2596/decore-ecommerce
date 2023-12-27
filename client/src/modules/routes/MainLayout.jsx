@@ -9,7 +9,7 @@ const MainLayout = () => {
       <div>
         <NavbarWithMegaMenu />
       </div>
-      <main className="mx-auto max-w-screen-xl">
+      <main className="">
         <Outlet />
       </main>
       <footer>

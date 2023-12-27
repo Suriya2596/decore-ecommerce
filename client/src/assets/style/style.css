@@ -23,13 +23,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
 
 :root {
-  --font-Playfair: "Playfair Display", serif;
-  --font-Poppins: "Poppins", sans-serif;
-  --primay: #6c3a13;
+  --font-Sora: 'Sora', sans-serif;;
+  --primay: #a26e44;
   --secondary: #f9bf29;
+  --drak-pry: #443402;
   --black: #100E0E;
   --drak-gray: #2e2d2a;
   --gray: #ebebeb;
@@ -44,7 +45,7 @@
 
 body {
   box-sizing: border-box !important;
-  font-family: var(--font-Poppins);
+  font-family: var(--font-Sora);
   background-color: var(--gray);
   padding: 0;
   margin: 0;
@@ -77,7 +78,10 @@ input[type=number] {
   color: var(--primay);
 }
 .sry-cl {
-    color: var(--secondary);
+  color: var(--secondary);
+}
+.drak-pry-cl{
+  color: var(--drak-pry);
 }
 .white-cl{
   color: var(--white);
@@ -90,6 +94,9 @@ input[type=number] {
 }
 .dr-gray-cl {
   color: var(--drak-gray);
+}
+.bg-primary{
+  background-color: var(--primay);
 }
 /* fonts size */
 p {
@@ -131,7 +138,22 @@ h6 {
 /*----------------------------------------*/
 /* 2.Common CSS */
 /*----------------------------------------*/
-
+.pry-btn{
+  background-color: var(--secondary);
+  color: var(--drak-pry-cl);
+  font-weight: 600;
+  padding: 16px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+.sry-btn{
+  background-color: var(--black);
+  color: var(--gray);
+  font-weight: 600;
+  padding: 16px 28px;
+  border-radius: 10px;
+  font-size: 16px;
+}
 /*----------------------------------------*/
 /* 3.Header CSS */
 /*----------------------------------------*/
