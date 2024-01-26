@@ -24,10 +24,58 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-Bold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-ExtraBold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-ExtraLight.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-Light.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-Medium.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-Regular.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-Bold.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Sora'), url('/public/assets/font/Sora-Thin.ttf') format('ttf');
+}
 
+  
 :root {
-  --font-Sora: 'Sora', sans-serif;;
+  --font-Sora: 'Sora', sans-serif;
   --primay: #a26e44;
   --secondary: #f9bf29;
   --drak-pry: #443402;
@@ -40,12 +88,12 @@
 
 * {
   box-sizing: border-box;
-  transition: all 0.3s ease;
+  transition: all 0.15s ease;
 }
 
 body {
   box-sizing: border-box !important;
-  font-family: var(--font-Sora);
+  font-family: var(--font-Sora) !important;
   background-color: var(--gray);
   padding: 0;
   margin: 0;
@@ -74,10 +122,10 @@ input[type=number] {
 .bg-cl{
   background-color: var(--black);
 }
-.pry-cl {
+.pry-cl{
   color: var(--primay);
 }
-.sry-cl {
+.sry-cl{
   color: var(--secondary);
 }
 .drak-pry-cl{
@@ -89,7 +137,7 @@ input[type=number] {
 .black-cl {
   color: var(--black);
 }
-.gray-cl {
+.gray-cl{
   color: var(--gray);
 }
 .dr-gray-cl {
@@ -105,32 +153,32 @@ p {
   color: var(--para-color);
 }
 h1 {
-  font-size: 46px;
+  font-size: 36px;
   font-weight: 800;
   color: var(--black);
 }
 h2 {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 800;
   color: var(--black);
 }
 h3 {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 800;
   color: var(--black);
 }
 h4 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--black);
 }
 h5 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: var(--black);
 }
 h6 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--black);
 }
@@ -153,6 +201,27 @@ h6 {
   padding: 16px 28px;
   border-radius: 10px;
   font-size: 16px;
+}
+.add-cart-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primay);
+  font-weight: 600;
+  padding: 12px 0px;
+  font-size: 16px;
+  width: 100%;
+}
+.add-cart-btn:hover{
+  background-color: var(--primay);
+  color: var(--white);
+}
+.go-cart-btn{
+  background-color: var(--primay) !important;
+  color: var(--white) !important;
+}
+.go-cart-btn:hover{
+  background-color: var(--drak-pry) !important;
 }
 /*----------------------------------------*/
 /* 3.Header CSS */
