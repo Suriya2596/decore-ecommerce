@@ -6,11 +6,37 @@ const productSchema = new Schema({
         type:String,
         required:true
     },
-    user:{
-        type:Schema.Types.ObjectId,
-        ref:"User",
-        required:true
+    price:{
+        type:Number,
+        required:true,
     },
+    newPrice:{
+        type:Number,
+    },
+    offer:{
+        type:String,
+    },
+    remainig:{
+        type:Number
+    },
+    soldNo:{
+        type:Number
+    },
+    mainImage:{
+        type:String,
+    },
+    images:{
+        items:[]
+    },
+    description: {
+        type:String,
+    },
+    video:{
+        items:[]
+    },
+    prdImage:{
+        items:[]
+    }
 },{timestamps:true})
 
 const Product = mongoose.model("Product",productSchema)

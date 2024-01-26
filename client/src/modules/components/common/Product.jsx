@@ -1,18 +1,10 @@
 // import React from 'react'
 import PropTypes from "prop-types";
-import { IoStar } from "react-icons/io5";
 import { HiArrowRight } from "react-icons/hi";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaHeart } from "react-icons/fa6";
 
-const Product = ({ mainImg, name, price, oldPrice, star, cartNo }) => {
-  const handleStar = (n) => {
-    const arr = [];
-    for (let i = 0; i < n; i++) {
-      arr.push(i);
-    }
-    return arr;
-  };
+const Product = ({ mainImg, name, price, oldPrice, cartNo }) => {
   return (
     <div>
       <div className="bg-[white] border-2 my-6 mx-4 text-center">
@@ -25,19 +17,9 @@ const Product = ({ mainImg, name, price, oldPrice, star, cartNo }) => {
             />
           </div>
           <h6 className="text-[16px] mt-4 mb-2">{name.toString().length>26 ? `${name.slice(0,26)}...`:name}</h6>
-          <h6 className="text-[18px] mb-3">
-            Rs.{price}
-            <span className="ml-3 text-[red] line-through">{oldPrice}</span>
+          <h6 className="text-[16px] mb-3">
+            <span className="mr-3 text-[red] line-through"> ₹ {oldPrice}</span> ₹ {price}
           </h6>
-          <div className="flex justify-center">
-            {handleStar({ star }).map((i) => {
-              return (
-                <div key={i}>
-                  <IoStar className="text-[#ff9600] mr-2" />
-                </div>
-              );
-            })}
-          </div>
         </div>
         <div className="grid grid-cols-12 gap-0  border-t-2 mt-4">
           <div className="col-span-2">
@@ -74,7 +56,6 @@ Product.propTypes = {
   name: PropTypes.string,
   price: PropTypes.number,
   oldPrice: PropTypes.number,
-  star: PropTypes.number,
   cartNo: PropTypes.number,
 };
 
