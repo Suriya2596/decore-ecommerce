@@ -6,8 +6,8 @@ import { FaHeart } from "react-icons/fa6";
 
 const Product = ({ mainImg, name, price, oldPrice, cartNo }) => {
   return (
-    <div>
-      <div className="bg-[white] border-2 my-6 mx-4 text-center">
+    <>
+      <div className="bg-[white] border-2 my-6 mx-4 text-center relative rounded-[12px]">
         <div className="pt-6 px-4">
           <div className="">
             <img
@@ -23,7 +23,7 @@ const Product = ({ mainImg, name, price, oldPrice, cartNo }) => {
         </div>
         <div className="grid grid-cols-12 gap-0  border-t-2 mt-4">
           <div className="col-span-2">
-            <div className="py-4 px-4 text-[#827f7f] hover:bg-[#a26e44] hover:text-white">
+            <div className="py-4 px-4 text-[#827f7f] hover:bg-[#a26e44] hover:text-white rounded-bl-[12px]">
               <FaHeart className="" />
             </div>
           </div>
@@ -41,13 +41,16 @@ const Product = ({ mainImg, name, price, oldPrice, cartNo }) => {
             </div>
           </div>
           <div className="col-span-2">
-            <div className="py-4 px-4 text-[#827f7f] hover:bg-[#a26e44] hover:text-white">
+            <div className="py-4 px-4 rounded-br-[12px] text-[#827f7f] hover:bg-[#a26e44] hover:text-white">
               <HiArrowRight className="" />
             </div>
           </div>
         </div>
+        <div className=" absolute top-[0%] translate-x-[0%] right-[0%] px-3 py-1 bg-[#a26e44]  rounded-tr-[12px] rounded-bl-[12px]">
+          <p className="text-[#fff]">save 14%</p>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

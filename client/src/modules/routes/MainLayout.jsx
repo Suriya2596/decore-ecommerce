@@ -5,7 +5,7 @@ import { Footer } from '../components/common/Footer'
 
 const MainLayout = () => {
   return (
-    <div>
+    <>
       <div>
         <NavbarWithMegaMenu />
       </div>
@@ -15,7 +15,7 @@ const MainLayout = () => {
       <footer>
         <Footer />
       </footer>
-    </div>
+    </>
   )
 }
 
